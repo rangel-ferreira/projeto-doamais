@@ -87,7 +87,9 @@ A arquitetura do sistema será baseada em um modelo cliente-servidor. As aplica�
 +-------------------------------------------------------------------------+
 ```
 
+
 Tecnologias Propostas 
+
 
 Frontend Web: React.js
 Frontend Mobile: React Native
@@ -100,13 +102,19 @@ Documentação da API: Swagger
 Controle de Versão: Git e GitHub
 
 
-Integrantes da Equipe e Seus Papéis 
+Integrantes da Equipe e Seus Papéis
+
 
 Moacir Cadmiel Silva dos Santos (Matrícula: 2318038): Gerente de Projeto e Arquiteta de Software.
+
 Rangel Amaral Ferreira (Matrícula: 2327067): Desenvolvedor Backend e DBA.
+
 Clarissa da Silva Freitas (Matrícula: 2315233): Desenvolvedora Frontend (Web e Mobile).
+
 João Pedro Pereira Alves (Matrícula: 2326205): Especialista em UX/UI e Prototipação.
+
 Paulo Ricardo de Castro Sousa (Matrícula: 2326189): Analista de QA e Requisitos.
+
 
 
 Cronograma para Etapa 2 (N708)
