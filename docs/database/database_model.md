@@ -16,60 +16,64 @@ Reviews: Armazena as avaliações que os usuários fazem uns dos outros após um
 Diagrama Entidade-Relacionamento (ER) 
 
 ```
-+-------------+      +-------------+
-|   Users     |      |  Categories |
-+-------------+      +-------------+
-| PK user_id  |      | PK category_id|
-| name        |      | name        |
-| email       |      +-------------+
-| password_hash|           |
-| location    |           |
-+-------------+           |
-    |  |                  |
- (donates)                | (has)
-    |  |                  |
-    |  v                  v
++-------------+      +-----------------+
+|   Usuarios  |      |    Categorias   |
++-------------+      +-----------------+
+| PK id_usuario |    | PK id_categoria |
+| nome          |    | nome            |
+| email         |    +-----------------+
+| senha_hash    |           |
+| localizacao   |           |
++-------------+             |
+    |  |                    |
+ (doacoes)                  | (has)
+    |  |                    |
+    |  v                    v
     | +-------------+
     | |   Items     |
     | +-------------+
     | | PK item_id  |
-    | | FK user_id  |
-    | | FK category_id|
-    | | title       |
-    | | description |
+    | | FK id_usuario  |
+    | | FK id_categoria|
+    | | titulo       |
+    | | descricao |
     | | status      |
     | +-------------+
     |  |
-    |  | (is object of)
+    |  | (e objeto de)
     |  v
-    +-------------+      +-------------+
-    | Donations   |      |   Reviews   |
-    +-------------+      +-------------+
-| PK donation_id|      | PK review_id|
-| FK item_id  |      | FK donation_id|
-| FK donor_id (Users)| | FK reviewer_id(Users)|
-| FK donee_id (Users)| | FK reviewed_id(Users)|
-| status      |      | rating      |
-    +-------------+      | comment     |
-                         +-------------+ ```
+    +-----------------------+   +---------------------+
+    | doacoes                |  |       Reviews        |
+    +-----------------------+   +---------------------+
+    | PK id_doacao           |  | PK review_id         |
+    | FK item_id             |  | FK id_doacao         |
+    | FK id_doador (Users)   |  | FK reviewer_id(Users)|
+    | FK id_donatario (Users)|  | FK reviewed_id(Users)|
+    | status                 |  | rating               |    
+    +------------------------+  | comentario           |
+                                 +---------------------+
 
 
 Dicionário de Dados 
-
-| Tabela | Coluna | Tipo | Descrição |
-|---|---|---|---|
-| Users | user_id | UUID | Identificador único do usuário. |
-| | name | VARCHAR(100) | Nome completo do usuário. |
-| | email | VARCHAR(100) | E-mail do usuário (único). |
-| | password_hash | VARCHAR(255) | Hash da senha do usuário. |
-| | location | VARCHAR(255) | Localização (bairro/cidade) para busca. |
-| Items | item_id | UUID | Identificador único do item. |
-| | user_id | UUID | Chave estrangeira para o doador (Users). |
-| | category_id | UUID | Chave estrangeira para a categoria (Categories). |
-| | title | VARCHAR(150) | Título do anúncio do item. |
-| | status | VARCHAR(20) | Status do item (disponível, reservado, doado). |
-| Donations | donation_id | UUID | Identificador único da transação de doação. |
-| | item_id | UUID | Chave estrangeira para o item doado. |
-| | donor_id | UUID | Chave estrangeira para o usuário doador. |
-| | donee_id | UUID | Chave estrangeira para o usuário donatário. |
-| | status | VARCHAR(20) | Status da doação (solicitada, aceita, concluída). |
+``
+| Tabela    | Coluna        | Tipo         | Descrição                                         |
++----------------------------------------------------------------------------------------------+
+| Usuarios  | id_usuario    | UUID         | Identificador único do usuário.                   |
+|           | nome          | VARCHAR(100) | Nome completo do usuário.                         |
+|           | email         | VARCHAR(100) | E-mail do usuário (único).                        |
+|           | senha_hash    | VARCHAR(255) | Hash da senha do usuário.                         |
+|           | localizacao   | VARCHAR(255) | Localização (bairro/cidade) para busca.           |
++----------------------------------------------------------------------------------------------+
+| Items     | item_id       | UUID         | Identificador único do item.                      |
+|           | id_usuario    | UUID         | Chave estrangeira para o doador (Users).          |
+|           | id_categoria  | UUID         | Chave estrangeira para a categoria (Categories).  |
+|           | titulo        | VARCHAR(150) | Título do anúncio do item.                        |
+|           | status        | VARCHAR(20)  | Status do item (disponível, reservado, doado).    |
++----------------------------------------------------------------------------------------------+
+| Doacoes   | id_doacao     | UUID         | Identificador único da transação de doação.       |
+|           | item_id       | UUID         | Chave estrangeira para o item doado.              |
+|           | id_doador     | UUID         | Chave estrangeira para o usuário doador.          |
+|           | id_donatario  | UUID         | Chave estrangeira para o usuário donatário.       |
+|           | status        | VARCHAR(20)  | Status da doação (solicitada, aceita, concluída). |
++----------------------------------------------------------------------------------------------+
+```
