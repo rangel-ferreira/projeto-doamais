@@ -37,12 +37,12 @@ Fortalecer laços comunitários: Ao conectar vizinhos e moradores da mesma cidad
 
 **Incluso:**
 
-Cadastro e autenticação de usuários (doadores e donatários).
-Publicação de itens para doação com descrição, fotos e categoria.
-Busca de itens por filtros (categoria, palavra-chave, localização).
-Sistema de "match" ou manifestação de interesse em um item.
-Chat para combinar a retirada do item.
-Sistema de avaliação e reputação dos usuários.
+* Cadastro e autenticação de usuários (doadores e donatários).
+* Publicação de itens para doação com descrição, fotos e categoria.
+* Busca de itens por filtros (categoria, palavra-chave, localização).
+* Sistema de "match" ou manifestação de interesse em um item.
+* Chat para combinar a retirada do item.
+* Sistema de avaliação e reputação dos usuários.
 
 **Não Incluso (nesta fase):**
 
