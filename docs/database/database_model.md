@@ -1,16 +1,16 @@
-Modelo de Dados 
+# Modelo de Dados 
 
-O modelo de dados foi projetado para armazenar informações sobre usuários, itens, categorias e as transações de doação.
+**O modelo de dados foi projetado para armazenar informações sobre usuários, itens, categorias e as transações de doação.**
 
-Users: Armazena os dados de todos os usuários.
+* Users: Armazena os dados de todos os usuários.
 
-Categories: Armazena as categorias dos itens (ex: Móveis, Eletrônicos, Vestuário).
+* Categories: Armazena as categorias dos itens (ex: Móveis, Eletrônicos, Vestuário).
 
-Items: Contém os detalhes de cada item disponível para doação e sua relação com o doador e a categoria.
+* Items: Contém os detalhes de cada item disponível para doação e sua relação com o doador e a categoria.
 
-Donations: Registra o processo de doação, conectando o doador, o donatário e o item.
+* Donations: Registra o processo de doação, conectando o doador, o donatário e o item.
 
-Reviews: Armazena as avaliações que os usuários fazem uns dos outros após uma doação.
+* Reviews: Armazena as avaliações que os usuários fazem uns dos outros após uma doação.
 
 
 Diagrama Entidade-Relacionamento (ER) 
