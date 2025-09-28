@@ -132,3 +132,14 @@ Semana | Atividade                                     |  Responsáveis         
 13     | Deploy e Documentação Final                   |  Cadmiel                                |  
 +-----------------------------------------------------------------------------------------------+
 ```
+
+
+### Protótipos de Interface
+
+#### Versão Web
+![Tela de Login Web](prototypes/web/01-tela-login.png)
+![Tela Home Web](prototypes/web/02-tela-home.png)
+
+#### Versão Mobile
+![Tela de Login Mobile](prototypes/mobile/01-mobile-login.png)
+![Tela Home Mobile](prototypes/mobile/02-mobile-home.png)
