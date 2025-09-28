@@ -141,5 +141,5 @@ Semana | Atividade                                     |  Responsáveis         
 ![Tela Home Web](prototypes/web/02-tela-home.jpg)
 
 #### Versão Mobile
-![Tela de Login Mobile](prototypes/mobile/01-mobile-login.jpg)
-![Tela Home Mobile](prototypes/mobile/02-mobile-home.jpg)
+![Tela de Login Mobile](prototypes/mobile/01-tela-login.jpg)
+![Tela Home Mobile](prototypes/mobile/02-tela-menu-produtos.jpg)
