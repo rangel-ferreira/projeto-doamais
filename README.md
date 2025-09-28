@@ -137,9 +137,9 @@ Semana | Atividade                                     |  Responsáveis         
 ### Protótipos de Interface
 
 #### Versão Web
-![Tela de Login Web](prototypes/web/01-tela-login.png)
-![Tela Home Web](prototypes/web/02-tela-home.png)
+![Tela de Login Web](prototypes/web/01-tela-login.jpg)
+![Tela Home Web](prototypes/web/02-tela-home.jpg)
 
 #### Versão Mobile
-![Tela de Login Mobile](prototypes/mobile/01-mobile-login.png)
-![Tela Home Mobile](prototypes/mobile/02-mobile-home.png)
+![Tela de Login Mobile](prototypes/mobile/01-mobile-login.jpg)
+![Tela Home Mobile](prototypes/mobile/02-mobile-home.jpg)
