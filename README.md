@@ -121,10 +121,10 @@ A arquitetura do sistema será baseada em um modelo cliente-servidor. As aplica�
 Semana | Atividade                                     |  Responsáveis                           |
 +-----------------------------------------------------------------------------------------------+
 1-2    | Configuração do ambiente e Sprint 0           |  Todos                                  |
-3-4    | Sprint 1: Autenticação e Perfil de Usuário    |  Rangel (Back), Clarissa (Front)        |
-5-6    | Sprint 2: Cadastro e Visualização de Itens    |  Rangel (Back), Clarissa (Front)        |
-7-8    | Sprint 3: Busca, Filtros e Chat em tempo real |  Cadmiel (Back), João Pedro (Front)     |
-9-10   | Sprint 4: Sistema de Avaliação e Notificações |  Paulo Ricardo (Back), Clarissa (Front) |
+3-4    | Sprint 1: Autenticação e Perfil de Usuário    |  Rangel (Back), João (Front)            |
+5-6    | Sprint 2: Cadastro e Visualização de Itens    |  Rangel (Back), João (Front)            |
+7-8    | Sprint 3: Busca, Filtros e Chat em tempo real |  Cadmiel (Back), João (Front)           |
+9-10   | Sprint 4: Sistema de Avaliação e Notificações |  Paulo Ricardo (Back), Cadmiel (Front)  |
 11     | Testes de integração e usabilidade            |  João Pedro, Paulo Ricardo              |
 12     | Refatoração, ajustes e preparação para deploy |  Todos                                  |
 13     | Deploy e Documentação Final                   |  Cadmiel                                |  
